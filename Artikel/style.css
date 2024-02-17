@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #121316;
+    scroll-padding: 130px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 111px 5px 0 5px;
+}
+
+
+
+.main{
+    padding-bottom: 20px;
+    width: 85%;
+    color: white;
+    border: 1px solid #3a3c43 ;
+
+}
+.back a{
+    margin-left: 25px;
+    text-decoration: none;
+    color: #65697b;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;    
+}
+.back{
+    display: flex;
+    align-items: center;
+    color: #3a3c43;
+    text-decoration: none;
+    border-bottom:1px solid #3a3c43;
+    margin-bottom: 50px;
+    height: 50px;
+}
+
+.judul{
+    font-family: "Poppins", sans-serif;
+    width: fit-content;
+    font-size: 44px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.content-judul{
+    margin-left: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-judul .kiri{
+    font-family: "Poppins", sans-serif;
+    color: #a7abb4;
+    max-width: 428px;
+    font-size: 16px;
+    line-height:26px;
+}
+
+.by .july{
+    color: #71747b;
+}
+
+.by{
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    color: #a7abb4;
+}
+
+
+.content-judul .kanan{
+    justify-content: space-between;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    max-width: 331px;
+    height: fit-content;
+    font-size:11px;
+    flex-wrap: wrap;
+}
+
+.content-judul .kanan .button{
+    margin-bottom: 10px;
+    color: #8d8e93;
+    border: 1px solid #65697b;
+    margin-right: 15px;
+    padding: 3px 12px 3px 12px;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+.gambar{
+    padding: 15px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.gambar img{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.content-artikel{
+    font-family: "Poppins", sans-serif;
+    padding: 55px 83px 0 83px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+/* kiri */
+.content-artikel .left ul li {
+    margin-bottom: 15px;
+}
+
+.content-artikel .left ul li a{
+    text-decoration: none;
+    color: #8d8e93;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.content-artikel .left ul li a:hover{
+    color: whitesmoke;
+}
+
+.content-artikel .left ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content-artikel .left{
+    width: 20%;
+    position: sticky;
+    top: 5rem;
+    height: 25%;
+}
+
+
+.content-artikel .left .active{
+    color: whitesmoke;
+}
+/* End Kiri */
+
+
+
+
+/* Kanan */
+.content-artikel .right{
+    width: 60%;
+}
+
+.content-artikel .right .section{
+    font-weight: 400;
+}
+
+.content-artikel .right .span{
+    color: #fff;
+
+}
+
+.content-artikel .right ul li{
+    color: whitesmoke;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.content-artikel .right h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content-artikel .right p{
+    margin-bottom: 17px;
+    color: #65697b;
+    line-height: 22px;
+}
+
+.content-artikel .right .share {
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* End Kanan */
+
+
+
+
+/* Card */
+.container a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    border-top: 1px solid #3a3c43;
+    height: 400px;
+}
+
+.container .card:nth-child(3){
+    border: none;
+}
+
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 404px;
+    height: 420px;
+    border-right: 1px inset #3a3c43;
+    transition: ease 0.5s;
+
+}
+
+.container .card:hover{
+    background-color: #1b1d22;
+}
+
+.container .card .imgBx{
+    position: absolute;
+    width: 90%;
+    height: 250px;
+    margin-top: 80px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+    transform: translateY(-50px);
+    /* scale: 0.90; */
+}
+
+.container .card .imgBx img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content p{
+    background-color: transparent;
+    color: #71747b;
+    font-size: 15px;
+    align-items: start;
+    display: flex;
+}
+
+.container .card .content h2{
+    display: flex;
+    text-align: start;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container .card .content{
+    padding-left: 20px;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    margin-top: 320px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    opacity: 100%;
+    transform: translateY(-30px);
+}
+/* End Card */
+
+
+/* Responsive  */
+
+@media screen and (max-width: 1001px){
+    .content-judul .kanan{
+        width: 184px;
+    }
+}
+
+@media screen and (max-width: 765px){
+.content-judul .kanan .button{
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.gambar{
+    margin-top: 10px;
+}
+
+    .content-judul .kanan{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        max-width: 184px;
+    }
+    .content-judul{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .by{
+        margin-left: 30px;
+    }
+
+    .content-judul .kiri{
+        max-width: 100%;
+    }
+
+    .content-artikel .left{
+        display: none;
+    }
+    .content-artikel .right{
+        width: 100%;
+    }
+
+    .content-artikel{
+    padding: 55px 23px 0 23px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 785px){
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+    }
+
+    .container .card{
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px outset #65697b;
+    }
+
+    .container .card:hover .content{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+
+    .container .card .content{
+        opacity: 100%;
+        margin-top: 370px;
+        margin-bottom: 20px;
+    }
+
+    .container .card .imgBx{
+        position: absolute;
+        width: 70%;
+        height: auto;
+        margin-top: 80px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .container .card:hover .imgBx{
+    transform: translateY(0px);
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 450px){
+    .container .card .content{
+        margin-top: 270px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
